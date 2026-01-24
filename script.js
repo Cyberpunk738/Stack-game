@@ -206,7 +206,7 @@ window.addEventListener("keydown", function (event) {
 });
 
 function eventHandler() {
-  if (autopilot) startGame();
+  if (autopilot || gameEnded) startGame();
   else splitBlockAndAddNextOneIfOverlaps();
 }
 
